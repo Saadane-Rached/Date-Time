@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@500&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    transition: color 2s;
+    position: relative;
+}
+
+.bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#bg_light {
+    display: block;
+}
+
+.dark_mode #bg_light {
+    display: none;
+}
+
+.dark_mode #bg_dark {
+    display: block;
+}
+
+#bg_dark {
+    display: none;
+}
+
+.dark_mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.first {
+    text-align: center;
+    font-size: x-large;
+    background-color: rgba(230, 223, 223, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 65%;
+}
+
+.dark_mode .first {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.button_container button {
+    font-size: x-large;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(230, 223, 223, 0.5);
+    color: black;
+    transition: color 2s;
+}
+
+.button_container button:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+.dark_mode .button_container button:hover {
+    background-color: rgba(230, 223, 223, 0.5);
+}
+
+.dark_mode .button_container button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.date, .time {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    background-color: rgba(230, 223, 223, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.hidden {
+    display: none;
+}
+
+.dark_mode .date, .dark_mode .time {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.analogue_clock {
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#left_clock {
+    left: 87.5%;
+}
+
+#right_clock {
+    left: 12.5%;
+}
+
+.clock_face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    transform: translateX(-100%);
+    transition: transform 0.05s ease-in-out;
+}
+
+.hour_hand {
+    height: 4px;
+    width: 25%;
+}
+
+.minute_hand {
+    height: 3px;
+    width: 35%;
+}
+
+.second_hand {
+    height: 2px;
+    width: 45%;
+    background-color: red;
+}
+
+.dark_mode .analogue_clock {
+    background-color: #1e1e1e;
+    border-color: white;
+}
+
+.dark_mode .hand {
+    background-color: white;
+}
+
+.dark_mode .second_hand {
+    background-color: red;
+}
+
+.number {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+.number1 { top: 15%; left: 70%; }
+.number2 { top: 30%; left: 85%; }
+.number3 { top: 50%; left: 93%; }
+.number4 { top: 70%; left: 85%; }
+.number5 { top: 85%; left: 70%; }
+.number6 { top: 90%; left: 50%; }
+.number7 { top: 85%; left: 30%; }
+.number8 { top: 70%; left: 15%; }
+.number9 { top: 50%; left: 7%; }
+.number10 { top: 30%; left: 15%; }
+.number11 { top: 15%; left: 30%; }
+.number12 { top: 8%; left: 50%; }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time & Date</title>
+    <link rel="icon" href="clk_date.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <video id="bg_light" class="bg_video" autoplay muted loop>
+        <source src="Light cloud.mp4" type="video/mp4">
+    </video>
+    <video id="bg_dark" class="bg_video" autoplay muted loop>
+        <source src="Dark cloud.mp4" type="video/mp4">
+    </video>
+
+    <div class="first">
+        <h1>Welcome to the website</h1>
+        <p>Do you want to see the time or the date right now?</p>
+        <p>Just click on Date or Time Reveal</p>
+    </div>
+
+    <div class="button_container">
+        <button onclick="find_time()"><b>Time Reveal</b></button>
+        <button onclick="find_date()"><b>Date Reveal</b></button>
+        <button onclick="toggle_sound()"><b>Sound OFF</b></button>
+        <button onclick="dark_light_mode()"><b>Dark Mode</b></button>
+    </div>
+
+    <div id="date_display" class="date hidden"></div>
+    <div id="time_display" class="time hidden"></div>
+
+    <div id="left_clock" class="analogue_clock hidden">
+        <div class="clock_face">
+            <div class="hand hour_hand"></div>
+            <div class="hand minute_hand"></div>
+            <div class="hand second_hand"></div>
+            <div class="number number1">1</div>
+            <div class="number number2">2</div>
+            <div class="number number3">3</div>
+            <div class="number number4">4</div>
+            <div class="number number5">5</div>
+            <div class="number number6">6</div>
+            <div class="number number7">7</div>
+            <div class="number number8">8</div>
+            <div class="number number9">9</div>
+            <div class="number number10">10</div>
+            <div class="number number11">11</div>
+            <div class="number number12">12</div>
+        </div>
+    </div>
+
+    <div id="right_clock" class="analogue_clock hidden">
+        <div class="clock_face">
+            <div class="hand hour_hand"></div>
+            <div class="hand minute_hand"></div>
+            <div class="hand second_hand"></div>
+            <div class="number number1">1</div>
+            <div class="number number2">2</div>
+            <div class="number number3">3</div>
+            <div class="number number4">4</div>
+            <div class="number number5">5</div>
+            <div class="number number6">6</div>
+            <div class="number number7">7</div>
+            <div class="number number8">8</div>
+            <div class="number number9">9</div>
+            <div class="number number10">10</div>
+            <div class="number number11">11</div>
+            <div class="number number12">12</div>
+        </div>
+    </div>
+
+</body>
+</html>
